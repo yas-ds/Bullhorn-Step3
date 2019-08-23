@@ -9,7 +9,6 @@
 
 
 <body>
-</div>
 <div class="container">
     <div class="jumbotron">
         <h1>Message Details</h1>
@@ -22,7 +21,7 @@
     Content :<span th:text="${message.content}" ></span><br />
     Post Date :<span th:text="${message.postdate}" ></span><br />
     Sent By :<span th:text="${message.sentby}" ></span><br />
-    Image :<span th:text="${message.image}" ></span><br />
+    Image :<img th:src="${message.image}"/><br />
     <a th:href="@{/delete/{id}(id=${message.id})}">Delete This Message</a>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
